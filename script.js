@@ -1,5 +1,5 @@
 
-alert('Alberto Perez Ortega, 1DAM CENEC, TATETI')
+
 
 
 // Inicializar el tablero del juego como una matriz 3x3
