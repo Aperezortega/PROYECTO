@@ -1,0 +1,83 @@
+/*body{
+    background-color: rgba(90, 128, 218, 0.986);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+*/
+:root {
+    --brillo-color: rgb(255, 255, 255);
+    --borde-color: rgb(255, 255, 255);
+}
+
+
+
+body {
+    background-color: #000;
+    border: 5px solid var(--borde-color);
+    box-shadow: 0 0 50px var(--brillo-color);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: calc(100vh - 4vw); 
+    width: calc(100vw - 4vw);
+    gap: 2vw; 
+    padding: 1vw; 
+    
+}
+
+.cuadrado {
+    box-sizing: border-box; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 2vw;
+    width: 37vw;
+    height: 37vw;
+    padding: 2vw;
+    background-color: #000;
+    border: 5px solid var(--borde-color);
+    box-shadow: 0 0 50px var(--brillo-color);
+    
+    
+}   
+
+.cuadrado > div {   
+    display: flex;
+    justify-content: center;    
+    align-items: center;        
+    padding: 1em;       
+    background-color: rgb(255, 255, 255);
+}   
+
+.jugadores {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column; 
+    gap: 2vw;
+}
+
+.jugador {
+    font-size: xx-large;
+    font-family: consolas;
+    padding: 1em;
+    color: aliceblue;
+}
+
+#jugadorX, .celdaX {
+    text-shadow: 0 0 5px rgb(228, 13, 217);
+    color:rgb(255, 0, 242);
+}
+
+#jugadorO, .celdaO {
+    color: rgb(0, 255, 21);
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+#celda1, #celda2, #celda3,#celda4, #celda5, #celda6,#celda7, #celda8, #celda9{
+    font-size: xx-large;
+    font-family: consolas;
+}
